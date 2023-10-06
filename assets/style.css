@@ -8,9 +8,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-html{
 
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.2 "Lato", sans-serif;
+    color: #777;
+ 
+    }
+    
+  
+
 
 
 
@@ -226,6 +234,7 @@ z-index: 1;
 
 footer{
   padding:50px 20px 20px 20px ;
+  background-color: rgba(234, 235, 236, 0.558);
 }
 
 footer img{
@@ -281,20 +290,36 @@ padding-top:10px;
 
 
 
+  .homepage{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    }
+    
+
   .homepage img{
     z-index: -5;
     filter: brightness(28%);
     }
     
+    .homepage i{
     
+     font-size:70px;
+     color: white;
+     animation: scaleUp 1s ease-in-out infinite;
+      }
+       
 
 
 .home-text{
 z-index: 1;
 color: white;
-padding:30px;
+padding:10px 30px 30px 30px;
 text-align: center;
 }
+
+
 
 .home-text h1{
  font-size:70px;
@@ -340,7 +365,7 @@ text-align: center;
 
   .q-links{
     position:absolute;
-    margin-top:100px;
+    margin-top:30px;
     padding:20px 20px 20px 20px;
   }
 
