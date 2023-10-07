@@ -341,28 +341,6 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .q-links{
     position:absolute;
     margin-top:30px;
@@ -375,7 +353,7 @@ text-align: center;
 
   .q-links button{
 padding:15px;
-background-color: rgb(231, 170, 17);
+background-color: black;
 color: white;
 border:2px solid white;
 border-radius:5px;
