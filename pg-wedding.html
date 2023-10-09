@@ -57,8 +57,7 @@
  </div>
 
 
- <div class="call-icon">    <i class="fa-solid fa-phone-volume"></i>
- </div>
+ <a href="tel:+2348120101342"> <div class="call-icon"> <i class="fa-solid fa-phone-volume"></i> </div></a>
 
 </header>
 
@@ -102,7 +101,7 @@
 
     <section class="gallery-gallery"> 
 
-        <h1>MEET  PLEASANT AND GABRIEL </h1>
+        <h1>MEET <span style="color: rgb(231, 170, 17);"> PLEASANT AND GABRIEL </span>  </h1>
         
            
         
@@ -169,6 +168,10 @@
 
 <style>
 
+a{
+    color:inherit;
+}
+
 .contact-head-head {
         position: absolute;
     opacity: 9;
@@ -193,6 +196,95 @@
         position:relative;
         top:-160px;
       }
+
+
+      
+  
+  .gallery-gallery{
+text-align: center;
+position:relative;
+top:70px;
+padding-bottom: 100px;
+  }
+
+  .gallery-gallery h1{
+color:var(--color-light-purple);
+font-size:30px;
+line-height:1.2;
+font-weight:100;
+  }
+
+
+
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  background-color:white;
+  justify-content:center;
+  margin-top:60px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.gal-btn{
+padding-bottom:50px;
+display:flex;
+gap:30px;
+  }
+
+  .gal-btn button{
+width:100px;
+  }
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 768px) {
+ /* .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+   
+  }
+*/
+
+.row {
+   display:grid;
+   grid-template-columns: repeat(3,30%);
+   
+  }
+
+
+}
+
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    
 
 
 
